@@ -10,7 +10,7 @@ import (
 
 //Doc is the representation of a real document. Using JSON by now.
 type Doc struct {
-	ID    string `json:"-"`
+	ID    int `json:"id"`
 	Title string `json:"title"`
 	Text  string `json:"text"`
 }
