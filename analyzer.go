@@ -6,11 +6,11 @@ import (
 )
 
 var stopWords = map[string]struct{}{
-	"a": {}, "and": {}, "am":{}, "be": {}, "have": {}, "i": {},
+	"a": {}, "and": {}, "am": {}, "be": {}, "have": {}, "i": {},
 	"in": {}, "of": {}, "that": {}, "the": {}, "to": {},
 }
 
-func analyze(text string) []string{
+func analyze(text string) []string {
 	tokens := tokenizer(text)
 	tokens = toLowerCase(tokens)
 	tokens = stopWordsFilter(tokens)
@@ -18,19 +18,20 @@ func analyze(text string) []string{
 }
 
 // tokenizer
-// hola como estas?
-// [hola, como, estas]
+// hey how are you?
+// [hey, how, are, you]
 func tokenizer(text string) []string {
 	return strings.FieldsFunc(text, func(r rune) bool {
 		return !unicode.IsLetter(r) && !unicode.IsNumber(r)
 	})
 }
 
-				// filters
+//******************
+// 		filters
+//******************
 
 //toLowerCase
 func toLowerCase(tokens []string) []string {
-
 	r := make([]string, len(tokens))
 
 	for i, t := range tokens {

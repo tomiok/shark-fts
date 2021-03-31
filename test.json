@@ -8,7 +8,7 @@
     {
       "id": 2,
       "title": "SQL from 0 to Hero",
-      "text": "In this article you can find almost 100 samples about how to use MySQL "
+      "text": "In this article you can find almost 100 samples about how to use MySQL engine"
     },
     {
       "id": 3,
@@ -18,7 +18,7 @@
     {
       "id": 4,
       "title": "FTS advanced",
-      "text": "Adding data to a Full-Text index is referred to as population. In interest contrast to normal indexes, these populations are not part of a transaction. This means that even though the data has been inserted in a Full-Text indexed table, which happens once the transaction that inserts these data is committed, this does not necessarily mean that the Full-Text index has been updated. Full-Text index population is asynchronous."
+      "text": "Adding data to a Full-Text index engine is referred to as population. In interest contrast to normal indexes, these populations are not part of a transaction. This means that even though the data has been inserted in a Full-Text indexed table, which happens once the transaction that inserts these data is committed, this does not necessarily mean that the Full-Text index has been updated. Full-Text index population is asynchronous."
     }
   ]
 }
